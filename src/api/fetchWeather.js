@@ -1,14 +1,17 @@
-import React from 'react'
+import axios from "axios";
 
-const fetchWeather = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const URL = 'https://api.openweathermap.org/data/2.5/weather';
+const fetchWeather = async (query) => {
 
-export default fetchWeather
+    const { data } = await axios.get(URL, {
+        params: {
+            q: query,
+            units: "metric",
+            APPID: process.env.REACT_APP_API_KEY,
+        },
+    });
 
+    return data;
+};
 
-// http://maps.openweathermap.org/maps/2.0/weather/{op}/{z}/{x}/{y}?appid={API key}
+export default fetchWeather;
