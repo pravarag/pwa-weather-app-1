@@ -7,7 +7,7 @@ const fetchWeather = async (query) => {
         params: {
             q: query,
             units: "metric",
-            APPID: process.env.REACT_APP_API_KEY,
+            APPID: 'b692f55db5f9d95be92f79ef9351a1b3',
         },
     });
 
