@@ -1,6 +1,6 @@
 # Weather App (Progressive Web APP)
 
-See live [@ weather.pawelborkar.com](https://weather.pawelborkar.com/)
+See live @[ weather.pawelborkar.com](https://weather.pawelborkar.com/)
 
 <br>
 
